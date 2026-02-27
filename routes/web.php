@@ -13,6 +13,9 @@ Route::get('/', function(){
 Route::get('/hello', [WelcomeCOntroller::class,'hello']// Typo fixed: Word -> World
 );
 
+Route::get('/gretting',[WelcomeController::class, 'gretting']);
+
+
 Route::resource('photo',PhotoController::class);
 
 Route::get('/world', function () {
